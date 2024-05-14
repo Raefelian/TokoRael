@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Keranjang TokoRael</title>
+    <title>Login TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,71 +93,103 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-header">Keranjang</div>
+        <div class="col-md-10 mx-auto">
+          <div class="card">
+            <h5 class="card-header">
+              <span>Kategori</span>
+              <a href="admin-category-form.html" class="btn btn-sm btn-success"
+                >Tambah</a
+              >
+              <div class="float-end">
+                <form action="#">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm text-center"
+                      placeholder="Cari"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-success btn-sm" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <a href="#" class="btn btn-danger btn-sm">
+                        <i class="fas fa-eraser"></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </h5>
             <div class="card-body">
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Produk</th>
-                    <td></td>
-                    <th class="text-center">Harga</th>
-                    <th class="text-center">Jumlah</th>
-                    <th class="text-center">Subtotal</th>
-                    <th></th>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Slug</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <td>1</td>
+                    <td>Handphone</td>
+                    <td>handphone</td>
                     <td>
-                      <p>
-                        <img src="https://picsum.photos/50/50" alt="" /><strong
-                          ><td>Nama Produknya</td></strong
-                        >
-                      </p>
-                    </td>
-                    <td class="text-center">Rp.100.000,-</td>
-                    <td>
-                      <form action="">
-                        <div class="input-group">
-                          <input
-                            type="number"
-                            class="form-control text-center"
-                            value="1"
-                          />
-                          <div class="input-group-append">
-                            <button class="btn btn-success" type="submit">
-                              <i class="fas fa-check"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </td>
-                    <td class="text-center">Rp.100.000,-</td>
-                    <td>
-                      <form action="">
-                        <button class="btn btn-danger" type="submit">
-                          <i class="fas fa-trash-alt"></i>
+                      <a href="#" class="text-decoration-none">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-success"></i>
                         </button>
-                      </form>
+                      </a>
+                      <button
+                        class="btn btn-sm"
+                        type="submit"
+                        onclick="return confirm('Apakah kamu yakin ingin menghapus?')"
+                      >
+                        <i class="fas fa-trash text-danger"></i>
+                      </button>
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="4"><strong>Total:</strong></td>
-                    <td class="text-center"><strong>Rp100.000,-</strong></td>
-                    <td></td>
+                    <td>2</td>
+                    <td>Laptop</td>
+                    <td>laptop</td>
+                    <td>
+                      <a href="#" class="text-decoration-none">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-success"></i>
+                        </button>
+                      </a>
+                      <button
+                        class="btn btn-sm"
+                        type="submit"
+                        onclick="return confirm('Apakah kamu yakin ingin menghapus?')"
+                      >
+                        <i class="fas fa-trash text-danger"></i>
+                      </button>
+                    </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div class="card-footer">
-              <a href="checkout.html" class="btn btn-success float-end"
-                >Pembayaran <i class="fas fa-angle-right"></i
-              ></a>
-              <a href="index.html" class="btn btn-warning text-white">
-                <i class="fas fa-angle-left"></i>Kembali</a
-              >
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

@@ -46,14 +46,15 @@
                 data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Filter</a
+                >Manage</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdown-1">
-                <a href="/admin-category.html" class="dropdown-item"
+                <a href="admin-category.html" class="dropdown-item"
                   >Kategori</a
                 >
-                <a href="/admin-product.html" class="dropdown-item">Produk</a>
-                <a href="/admin-order.html" class="dropdown-item">Order</a>
+                <a href="admin-product.html" class="dropdown-item">Produk</a>
+                <a href="admin-order.html" class="dropdown-item">Order</a>
+                <a href="admin-users.html" class="dropdown-item">Pengguna</a>
               </div>
             </li>
           </ul>
@@ -80,8 +81,8 @@
                 >User</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdown-2">
-                <a href="/profile.html" class="dropdown-item">Profile</a>
-                <a href="/orders.html" class="dropdown-item">Orders</a>
+                <a href="profile.html" class="dropdown-item">Profile</a>
+                <a href="orders.html" class="dropdown-item">Orders</a>
                 <a href="#" class="dropdown-item">Logout</a>
               </div>
             </li>
@@ -98,16 +99,22 @@
             <div class="card-body">
               <form action="">
                 <div class="form-group">
-                    <label for="">Username</label>
-                    <input type="email" class="form-control" required autofocus>
-                    <small class="form-text text-danger">Username harus diisi</small>
+                  <label for="">Username</label>
+                  <input type="email" class="form-control" required autofocus />
+                  <small class="form-text text-danger"
+                    >Username harus diisi</small
+                  >
                 </div>
                 <div class="form-group mt-2">
-                    <label for="">Password</label>
-                    <input type="text" class="form-control" required>
-                    <small class="form-text text-danger">Password harus diisi</small>
+                  <label for="">Password</label>
+                  <input type="password" class="form-control" required />
+                  <small class="form-text text-danger"
+                    >Password harus diisi</small
+                  >
                 </div>
-                <button type="submit" class="btn btn-success mt-4">Masuk</button>
+                <button type="submit" class="btn btn-success mt-4">
+                  Masuk
+                </button>
               </form>
             </div>
           </div>

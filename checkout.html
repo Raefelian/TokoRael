@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Checkout TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,41 +93,86 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-8">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
+            <div class="card-header">Formulir Alamat Pengiriman</div>
             <div class="card-body">
               <form action="">
                 <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
+                  <label for="">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="Nama Penemrima"
+                  />
+                  <small class="form-text text-danger">Nama harus diisi.</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Alamat</label>
+                  <textarea
+                    name="address"
+                    id=""
+                    cols="30"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
                   <small class="form-text text-danger"
-                    >Username harus diisi</small
+                    >Alamat harus diisi.</small
                   >
                 </div>
                 <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
+                  <label for="">Telepon</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Nomor Telepon Penerima"
+                  />
                   <small class="form-text text-danger"
-                    >Password harus diisi</small
+                    >Nomor telepon harus diisi.</small
                   >
                 </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
-                </div>
-                <button type="submit" class="btn btn-success mt-4">
-                  Daftar
-                </button>
+
+                <button class="btn btn-success">Simpan</button>
               </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3">
+                <div class="card-header">Keranjang</div>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Produk</th>
+                        <th>Kuantitas</th>
+                        <th>Harga</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Produk Title</td>
+                        <td>3</td>
+                        <td>Rp100.000,-</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Subtotal</td>
+                        <td>Rp.300.000,-</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2">Total</th>
+                        <th>Rp300.000,-</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>

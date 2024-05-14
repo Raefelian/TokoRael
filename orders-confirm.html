@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Orders Confirm TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,41 +93,69 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-9">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
-            <div class="card-body">
-              <form action="">
+            <div class="card-header">
+              Konfirmasi Pembayaran Order #012345678
+              <div class="float-end">
+                <span class="badge badge-pill bg-warning"
+                  >Menunggu Pembayaran</span
+                >
+              </div>
+            </div>
+            <form action="">
+              <div class="card-body">
                 <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
-                  <small class="form-text text-danger"
-                    >Username harus diisi</small
-                  >
+                  <label for="">ID Transaksi</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="012345678"
+                    disabled
+                    readonly
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
+                  <label for="">Dari Rekening an.</label>
+                  <input type="text" class="form-control" />
                 </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus diisi</small
-                  >
+                <div class="form-group">
+                  <label for="">Sebesar</label>
+                  <input type="number" class="form-control" />
                 </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
+                <div class="form-group">
+                  <label for="">Catatan</label>
+                  <textarea
+                    name="description"
+                    cols="30"
+                    rows="5"
+                    for=""
+                    class="form-control"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-success mt-4">
-                  Daftar
+                <div class="form-group">
+                  <label for="">Bukti Transfer</label> <br />
+                  <input type="file" name="image" id="" />
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-success">
+                  Konfirmasi Pembayaran
                 </button>
-              </form>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <div class="card-header">Menu</div>
+            <div class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="profile.html">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="orders.html">Orders</a>
+              </li>
             </div>
           </div>
         </div>

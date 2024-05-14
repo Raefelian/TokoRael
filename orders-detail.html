@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Orders Detail TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,41 +93,67 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-9">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
+            <div class="card-header">
+              Datil Order #012345678
+              <div class="float-end">
+                <span class="badge badge-pill bg-warning"
+                  >Menunggu Pembayaran</span
+                >
+              </div>
+            </div>
             <div class="card-body">
-              <form action="">
-                <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
-                  <small class="form-text text-danger"
-                    >Username harus diisi</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus diisi</small
-                  >
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
-                </div>
-                <button type="submit" class="btn btn-success mt-4">
-                  Daftar
-                </button>
-              </form>
+              <p>Nama: Nama penerima</p>
+              <p>Telepon: 012345678123</p>
+              <p>Alamat: Jl. Sleman, No. 6i</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Produk</th>
+                    <td></td>
+                    <th class="text-center">Harga</th>
+                    <th class="text-center">Jumlah</th>
+                    <th class="text-center">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>
+                        <img src="https://picsum.photos/50/50" alt="" /><strong
+                          ><td>Nama Produknya</td></strong
+                        >
+                      </p>
+                    </td>
+                    <td class="text-center">Rp.100.000,-</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">Rp.100.000,-</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><strong>Total:</strong></td>
+                    <td class="text-center"><strong>Rp100.000,-</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer">
+              <a href="orders-confirm.html" class="btn btn-success"
+                >Konfirmasi Pembayaran</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <div class="card-header">Menu</div>
+            <div class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="profile.html">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="orders.html">Orders</a>
+              </li>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Orders TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,41 +93,83 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-9">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
+            <div class="card-header">Daftar Orders</div>
             <div class="card-body">
-              <form action="">
-                <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
-                  <small class="form-text text-danger"
-                    >Username harus diisi</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus diisi</small
-                  >
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
-                </div>
-                <button type="submit" class="btn btn-success mt-4">
-                  Daftar
-                </button>
-              </form>
+              <table class="table">
+                <thead>
+                  <th>Nomor</th>
+                  <th>Tanggal</th>
+                  <th>Total Belanja</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="orders-detail.html"
+                        ><strong>#012345678</strong></a
+                      >
+                    </td>
+                    <td>2024/05/09</td>
+                    <td>Rp300.000,-</td>
+                    <td>
+                      <span class="badge badge-pill bg-warning"
+                        >Menunggu pembayaran</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="orders-detail.html"
+                        ><strong>#012345678</strong></a
+                      >
+                    </td>
+                    <td>2024/05/12</td>
+                    <td>Rp300.000,-</td>
+                    <td>
+                      <span class="badge badge-pill bg-success">Dikirim</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="orders-detail.html"
+                        ><strong>#012345678</strong></a
+                      >
+                    </td>
+                    <td>2024/05/12</td>
+                    <td>Rp300.000,-</td>
+                    <td>
+                      <span class="badge badge-pill bg-primary">Diperoses</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="orders-detail.html"
+                        ><strong>#012345678</strong></a
+                      >
+                    </td>
+                    <td>2024/05/09</td>
+                    <td>Rp300.000,-</td>
+                    <td>
+                      <span class="badge badge-pill bg-danger">Dibatalkan</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <div class="card-header">Menu</div>
+            <div class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="profile.html">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="orders.html">Orders</a>
+              </li>
             </div>
           </div>
         </div>

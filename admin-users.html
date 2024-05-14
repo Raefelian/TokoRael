@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Login TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,41 +93,96 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-10 mx-auto">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
+            <h5 class="card-header">
+              <span>Pengguna</span>
+              <a href="admin-users-form.html" class="btn btn-sm btn-success"
+                >Tambah</a
+              >
+
+              <div class="float-end">
+                <form action="#">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm text-center"
+                      placeholder="Cari"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-success btn-sm" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <a href="#" class="btn btn-danger btn-sm">
+                        <i class="fas fa-eraser"></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </h5>
             <div class="card-body">
-              <form action="">
-                <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
-                  <small class="form-text text-danger"
-                    >Username harus diisi</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus diisi</small
-                  >
-                </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
-                </div>
-                <button type="submit" class="btn btn-success mt-4">
-                  Daftar
-                </button>
-              </form>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Pengguna</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <p>
+                        <img src="https://picsum.photos/70/70" alt="" />
+                        Admin
+                      </p>
+                    </td>
+                    <td>admin@gmail.com</td>
+                    <td>Admin</td>
+                    <td>Aktif</td>
+                    <td>
+                      <form action="#">
+                        <a href="#" class="text-decoration-none">
+                          <button class="btn btn-sm">
+                            <i class="fas fa-edit text-success"></i>
+                          </button>
+                        </a>
+                        <button
+                          class="btn btn-sm"
+                          type="submit"
+                          onclick="return confirm('Apakah kamu yakin ingin menghapus?')"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-success" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

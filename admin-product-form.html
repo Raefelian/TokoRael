@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.122.0" />
-    <title>Daftar TokoRael</title>
+    <title>Login TokoRael</title>
 
     <link
       rel="canonical"
@@ -93,39 +93,78 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-10 mx-auto">
           <div class="card">
-            <h5 class="card-header">Daftar</h5>
+            <h5 class="card-header">
+              <span>Tambah Produk</span>
+            </h5>
             <div class="card-body">
               <form action="">
                 <div class="form-group">
-                  <label for="">Username</label>
-                  <input type="text" class="form-control" required autofocus />
+                  <label for="">Produk</label>
+                  <input
+                    type="text"
+                    id="title"
+                    class="form-control"
+                    onkeyup="createSlug()"
+                    required
+                    autofocus
+                  />
                   <small class="form-text text-danger"
                     >Username harus diisi</small
                   >
                 </div>
                 <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="email" class="form-control" required autofocus />
-                  <small class="form-text text-danger">Email harus diisi</small>
+                  <label for="">Harga</label>
+                  <input
+                    type="Number"
+                    class="form-control"
+                    required
+                    autofocus
+                  />
+                  <small class="form-text text-danger">Harga harus diisi</small>
                 </div>
-                <div class="form-group mt-2">
-                  <label for="">Password</label>
-                  <input type="text" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus diisi</small
-                  >
+                <div class="form-group">
+                  <label for="">Katgori</label>
+                  <select name="role" id="id_category" class="form-control">
+                    <option value="1">Laptop</option>
+                    <option value="2">Handphone</option>
+                  </select>
                 </div>
-                <div class="form-group mt-2">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" class="form-control" required />
-                  <small class="form-text text-danger"
-                    >Password harus sama.</small
-                  >
+                <div class="form-group">
+                  <label for="">Ada Stok?</label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      name="status"
+                      class="form-check-input"
+                      value="1"
+                    />
+                    <label for="" class="form-check-label">Stok Tersedia</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      name="status"
+                      class="form-check-input"
+                      value="1"
+                    />
+                    <label for="" class="form-check-label">Stok Habis</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Gambar</label>
+                  <br />
+                  <input type="file" name="image" id="" />
+                </div>
+                <div class="form-group">
+                  <label for="">Slug</label>
+                  <input type="text" id="slug" class="form-control" required />
+                  <small class="form-text text-danger">Slug</small>
                 </div>
                 <button type="submit" class="btn btn-success mt-4">
-                  Daftar
+                  Simpan
                 </button>
               </form>
             </div>
@@ -135,5 +174,6 @@
     </main>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
